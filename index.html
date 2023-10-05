@@ -62,23 +62,29 @@
         <section id="FormContainer">
             <form>
                 <h5>Subheading</h5>
-                <div>
-                    <label for="First Name">Voor naam</label>
-                    <input type="text" name="First-Name" id="First-Name" placeholder="Voor naam">
-                    <label for="Last Name">Achternaam</label>
-                    <input type="text" name="Last-Name" id="Last-Name">
+                <div class="FormNamesInput">
+                    <div class="formfield">
+                        <label for="First Name">Voor naam</label>
+                        <input type="text" name="First-Name" id="First-Name" placeholder="Voornaam">
+                    </div>
+                    <div class="formfield">
+                        <label for="Last Name">Achternaam</label>
+                        <input type="text" name="Last-Name" id="Last-Name" placeholder="Achternaam">
+                    </div>
                 </div>
                 <div class="formfield">
                     <lABEl for="eMail">email</lABEl>
-                    <input type="email">
+                    <input type="email" placeholder="email">
                 </div>
-
-                <div class="formfield">
-                    <Label for="Residence">Woonplaats</Label>
-                    <input type="text" name="" id="">
-
-                    <label for="DateOfBirth">Geboorte Datum</label>
-                    <input type="date">
+                <div class="FormNamesInput">
+                    <div class="formfield">
+                        <Label for="Residence">Woonplaats</Label>
+                        <input type="text" name="" id="" placeholder="Woonplaats">
+                    </div>
+                    <div class="formfield">
+                        <label for="DateOfBirth">Geboorte Datum</label>
+                        <input type="date">
+                    </div>
                 </div>
                 <div class="formfield">
                     <label for="Subject">Onderwerp</label>
@@ -89,11 +95,9 @@
                         <option value="MeOther">Overige</option>
                     </select>
                 </div>
-                <div>
-                    <label for="text">Heb je een vraag?</label>
-                    <textarea name="message" rows="4" cols="3" placeholder="Vraag?">
+                <label for="text">Heb je een vraag?</label>
+                <textarea name="message" rows="4" cols="3" placeholder="Vraag?">
                     </textarea>
-                </div>
 
                 <div>
                     <label for="Inschrijven">Inschrijven voor de nieuwsbrief?</label>
@@ -107,7 +111,7 @@
                     <label for="Akkoord">Ik ga akkoord met de algemene voorwaarden</label>
                     <input type="checkbox" name="Akkoord" id="Akkoord">
                 </div>
-                <input type="button">
+                <button class="button">Verzend formulier</button>
             </form>
         </section>
         <footer>

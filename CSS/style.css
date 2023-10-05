@@ -75,13 +75,8 @@
         flex-direction: row;
         gap: 90px;
         top: 0;
-        transition: .5s;
         padding-top: 90px;
         padding-bottom: 90px;
-    }
-
-    #Articles :hover {
-        transform: scale(1.1);
     }
 
     article {
@@ -93,6 +88,11 @@
         border-style: solid;
         border-radius: 10px;
         width: 300px;
+        transition: 1s;
+    }
+
+    article:hover {
+        transform: scale(1.1);
     }
 
     #FormContainer {
@@ -102,17 +102,23 @@
 
     form {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         flex-direction: column;
-        width: 300px;
-        padding-left: 90px;
+        width: 50vw;
+        padding-bottom: 10vw;
+    }
+
+    .FormNamesInput {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
     }
 
     .formfield {
         display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex: 2;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
     }
 
     footer {
@@ -129,12 +135,34 @@
 }
 
 @media (max-width:480px) {
+    #NavLinkContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
     body {
-        max-width: 90vw;
+        max-width: 100vw;
+    }
+
+    form {
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .FormNamesInput {
+        flex-direction: column;
     }
 
     .formfield {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    #Articles {
+        flex-direction: column;
+    }
+
+    #LinkNav {
+        flex-direction: column;
     }
 }
