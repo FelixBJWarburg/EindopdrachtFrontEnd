@@ -7,6 +7,14 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,7 +31,7 @@
         <section>
             <div id="ContainerTextHeader">
                 <div class="ContainerText">
-                    <h1>Text</h1>
+                    <h1 class="Titel">Text</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maxime accusamus, iste quis
                         vitae
                         quaerat possimus hic natus repudiandae, aperiam ab ipsam beatae sapiente velit saepe eius, nihil
@@ -40,7 +48,7 @@
             <div id="Articles">
                 <article>
                     <img src="Images/apple_158989157.jpg" alt="Apple">
-                    <h2>apple</h2>
+                    <h2>Apple</h2>
                     <p>What can say about the humble apple</p>
                     <a href="">Link</a>
                 </article>
@@ -60,35 +68,35 @@
 
         </section>
         <section id="FormContainer">
-            <form>
-                <h5>Subheading</h5>
-                <div class="FormNamesInput">
+            <form action="/EindOpdrachtFrontEnd/Contact.html">
+                <h5 class="Titel">Nieuwsbrief formulier</h5>
+                <div class=" FormNamesInput">
                     <div class="formfield">
                         <label for="First Name">Voor naam</label>
-                        <input type="text" name="First-Name" id="First-Name" placeholder="Voornaam">
+                        <input class="InputField" type="text" name="First-Name" id="First-Name" placeholder="Voornaam">
                     </div>
                     <div class="formfield">
                         <label for="Last Name">Achternaam</label>
-                        <input type="text" name="Last-Name" id="Last-Name" placeholder="Achternaam">
+                        <input class="InputField" type="text" name="Last-Name" id="Last-Name" placeholder="Achternaam">
                     </div>
                 </div>
                 <div class="formfield">
                     <lABEl for="eMail">email</lABEl>
-                    <input type="email" placeholder="email">
+                    <input class="InputField" type="email" placeholder="email">
                 </div>
                 <div class="FormNamesInput">
                     <div class="formfield">
                         <Label for="Residence">Woonplaats</Label>
-                        <input type="text" name="" id="" placeholder="Woonplaats">
+                        <input class="InputField" type="text" name="" id="" placeholder="Woonplaats">
                     </div>
                     <div class="formfield">
                         <label for="DateOfBirth">Geboorte Datum</label>
-                        <input type="date">
+                        <input class="InputField" type="date">
                     </div>
                 </div>
                 <div class="formfield">
                     <label for="Subject">Onderwerp</label>
-                    <select type="" name="" id="">
+                    <select class="InputField" type="" name="" id="">
                         <option value="ChooseSubject">Kies Onderwerp</option>
                         <option value="Me">Over mij</option>
                         <option value="MeWork">Mijn Werk</option>
@@ -112,6 +120,7 @@
                     <input type="checkbox" name="Akkoord" id="Akkoord">
                 </div>
                 <button class="button">Verzend formulier</button>
+
             </form>
         </section>
         <footer>

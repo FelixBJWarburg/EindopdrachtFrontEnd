@@ -2,6 +2,7 @@
     body {
         margin: 0px;
         background-color: #AEF2D9;
+        font-family: 'Roboto', sans-serif;
     }
 
     colors {
@@ -16,10 +17,15 @@
         padding-top: 20px;
         padding-bottom: 20px;
 
+        top: 0;
+        position: sticky;
+
+        /*Om de overlap van article groei over nav te voorkomen*/
+        z-index: 1;
     }
 
     #NavLinkContainer {
-        margin-right: 20px;
+        margin-right: 2vw;
         display: flex;
         flex-direction: row;
         justify-content: end;
@@ -32,6 +38,11 @@
         border-radius: 10%;
         color: white;
         text-decoration: none;
+
+    }
+
+    label {
+        font-weight: bold;
 
     }
 
@@ -73,10 +84,10 @@
     #Articles {
         display: flex;
         flex-direction: row;
-        gap: 90px;
+        gap: 2vw;
         top: 0;
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
 
     article {
@@ -87,8 +98,12 @@
         border: black;
         border-style: solid;
         border-radius: 10px;
-        width: 300px;
+        max-width: 25vw;
         transition: 1s;
+    }
+
+    .Titel {
+        font-size: 2rem;
     }
 
     article:hover {
@@ -106,6 +121,7 @@
         flex-direction: column;
         width: 50vw;
         padding-bottom: 10vw;
+        gap: 20px;
     }
 
     .FormNamesInput {
@@ -121,6 +137,10 @@
         flex: 1;
     }
 
+    .InputField {
+        padding: 10px;
+    }
+
     footer {
         background-color: #A60311;
         padding: 30px;
@@ -131,6 +151,13 @@
         flex-direction: row;
         justify-content: end;
         gap: 10px;
+    }
+
+    .button {
+        background-color: #A60311;
+        color: bisque;
+        max-width: 30vw;
+        padding: 10px;
     }
 }
 
@@ -160,6 +187,10 @@
 
     #Articles {
         flex-direction: column;
+    }
+
+    article {
+        max-width: 90vw;
     }
 
     #LinkNav {
