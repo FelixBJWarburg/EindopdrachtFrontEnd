@@ -9,6 +9,13 @@
         color: #A60311, #024873, #2E84A6, #AEF2D9, #F20505;
     }
 
+    h5 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 10vh;
+    }
+
     /*Nav settings*/
     nav {
         background-color: #A60311;
@@ -38,6 +45,7 @@
         border-radius: 10%;
         color: white;
         text-decoration: none;
+        transition: .5s;
 
     }
 
@@ -73,6 +81,17 @@
         padding-top: 90px;
     }
 
+    #ContainerTextHeader a {
+        text-decoration: none;
+        background-color: #A60311;
+        padding: 10px;
+        border-radius: 5%;
+        transition: .5s;
+    }
+
+    #ContainerTextHeader a:hover {
+        background-color: #024873;
+    }
 
     #ContainerSecondArticles {
         display: flex;
@@ -100,6 +119,10 @@
         border-radius: 10px;
         max-width: 25vw;
         transition: 1s;
+    }
+
+    article img {
+        border-radius: 5px;
     }
 
     .Titel {
@@ -146,6 +169,11 @@
         padding: 30px;
     }
 
+    footer a {
+        color: #AEF2D9;
+        text-decoration: none;
+    }
+
     #LinkNav {
         display: flex;
         flex-direction: row;
@@ -156,8 +184,13 @@
     .button {
         background-color: #A60311;
         color: bisque;
-        max-width: 30vw;
         padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: #A60311;
+        margin-top: 25px;
+
     }
 }
 
