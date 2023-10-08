@@ -71,8 +71,8 @@
     /*header section*/
 
     #ContainerTextHeader {
-        background-image: url(/EindOpdrachtFrontEnd/Images/RaveningWar.jpeg);
-        background-image: "/EindOpdrachtFrontEnd/Images/RaveningWar.jpeg";
+        background-image: url(/Images/RaveningWar.jpeg);
+        background-image: "/Images/RaveningWar.jpeg";
         background-position: center;
         background-repeat: no-repeat;
         color: #AEF2D9;
