@@ -74,6 +74,8 @@
         background-image: url(../Images/RaveningWar.jpeg);
         background-image: "../Images/RaveningWar.jpeg";
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100vw;
         color: #AEF2D9;
         display: flex;
         flex-direction: column;
@@ -251,13 +253,15 @@
         width: 20vw;
     }
 
+    #ContainerTextHeader {
+        background-size: auto;
+    }
+
     #NavLinkContainer {
         flex-direction: column;
         align-items: center;
     }
 
-    #ContainerTextHeader{
-       background-repeat: no-repeat;
     body {
         max-width: 100vw;
     }
