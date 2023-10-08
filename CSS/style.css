@@ -1,12 +1,12 @@
 @media screen {
     body {
         margin: 0px;
-        background-color: #AEF2D9;
+        background-color: #1d82aa;
         font-family: 'Roboto', sans-serif;
     }
 
     colors {
-        color: #A60311, #024873, #2E84A6, #AEF2D9, #F20505;
+        color: #070922, #1e2454, #2a3e73, #1d82aa, #1e2454;
     }
 
     h5 {
@@ -17,13 +17,22 @@
     }
 
     /*Nav settings*/
+
+    .Logo {
+        width: 10vw;
+        padding-left: 3vw;
+    }
+
+
     nav {
-        background-color: #A60311;
+        display: flex;
+        justify-content: space-between;
+        background-color: #070922;
         border: azure, azure, black, azure;
         border-style: solid;
         padding-top: 20px;
         padding-bottom: 20px;
-
+        align-items: center;
         top: 0;
         position: sticky;
 
@@ -37,10 +46,11 @@
         flex-direction: row;
         justify-content: end;
         gap: 30px;
+        padding: 10px;
     }
 
     nav a {
-        background-color: blue;
+        background-color: #2a3e73;
         padding: 10px;
         border-radius: 10%;
         color: white;
@@ -49,22 +59,23 @@
 
     }
 
+    nav a:hover {
+        background-color: #1d82aa;
+    }
+
     label {
         font-weight: bold;
 
     }
 
-    nav a:hover {
-        background-color: red;
-        padding: 10px;
-    }
-
     /*header section*/
 
     #ContainerTextHeader {
-        background-image: url(/EindOpdrachtFrontEnd/Images/FruitBowl.jpeg);
+        background-image: url(/EindOpdrachtFrontEnd/Images/RaveningWar.jpeg);
+        background-image: "/EindOpdrachtFrontEnd/Images/RaveningWar.jpeg";
         background-position: center;
-        color: wheat;
+        background-repeat: no-repeat;
+        color: #AEF2D9;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -83,20 +94,22 @@
 
     #ContainerTextHeader a {
         text-decoration: none;
-        background-color: #A60311;
+        color: #1d82aa;
+        background-color: #070922;
         padding: 10px;
         border-radius: 5%;
         transition: .5s;
     }
 
     #ContainerTextHeader a:hover {
-        background-color: #024873;
+        background-color: #2a3e73;
     }
 
+    /* Articles section */
     #ContainerSecondArticles {
         display: flex;
         justify-content: center;
-        background-color: #2E84A6;
+        background-color: #1e2454;
         flex-direction: row;
     }
 
@@ -110,10 +123,12 @@
     }
 
     article {
-        background-color: #A60311;
+        background-color: #1d82aa;
+        color: #070922;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: start;
+        padding: 20px;
         border: black;
         border-style: solid;
         border-radius: 10px;
@@ -125,6 +140,16 @@
         border-radius: 5px;
     }
 
+    article a {
+        background-color: #070922;
+        color: #1d82aa;
+        padding: 10px;
+    }
+
+    article a:hover {
+        background-color: #2a3e73;
+    }
+
     .Titel {
         font-size: 2rem;
     }
@@ -133,6 +158,11 @@
         transform: scale(1.1);
     }
 
+    .Rating img {
+        height: 25px;
+    }
+
+    /* Form Section */
     #FormContainer {
         display: flex;
         justify-content: center;
@@ -164,14 +194,26 @@
         padding: 10px;
     }
 
+    /* Footer Section */
     footer {
-        background-color: #A60311;
+        background-color: #070922;
         padding: 30px;
     }
 
     footer a {
         color: #AEF2D9;
         text-decoration: none;
+    }
+
+    #FooterLogos {
+        display: flex;
+        height: 40px;
+        gap: 10px;
+    }
+
+
+    footer p {
+        color: #AEF2D9;
     }
 
     #LinkNav {
@@ -182,19 +224,34 @@
     }
 
     .button {
-        background-color: #A60311;
-        color: bisque;
+        background-color: #070922;
+        color: #1d82aa;
         padding: 10px;
         border-radius: 5px;
         font-size: 1rem;
         font-weight: bold;
-        border: #A60311;
         margin-top: 25px;
+        transition: .5s;
 
+    }
+
+    .button:hover {
+        background-color: #2a3e73;
     }
 }
 
 @media (max-width:480px) {
+
+    nav {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .Logo {
+        padding-left: 0px;
+        width: 20vw;
+    }
+
     #NavLinkContainer {
         flex-direction: column;
         align-items: center;
@@ -220,6 +277,13 @@
 
     #Articles {
         flex-direction: column;
+        padding: 0px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .button {
+        padding: 20px;
     }
 
     article {
