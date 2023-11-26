@@ -1,0 +1,300 @@
+@media screen {
+    body {
+        margin: 0px;
+        background-color: #1d82aa;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    colors {
+        color: #070922, #1e2454, #2a3e73, #1d82aa, #1e2454;
+    }
+
+    h5 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 10vh;
+    }
+
+    /*Nav settings*/
+
+    .Logo {
+        width: 10vw;
+        padding-left: 3vw;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #070922;
+        border: azure, azure, black, azure;
+        border-style: solid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        top: 0;
+        position: sticky;
+
+        /*Om de overlap van article groei over nav te voorkomen*/
+        z-index: 1;
+    }
+
+    #NavLinkContainer {
+        margin-right: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    nav a {
+        background-color: #2a3e73;
+        padding: 10px;
+        border-radius: 10%;
+        color: white;
+        text-decoration: none;
+        transition: .5s;
+
+    }
+
+    nav a:hover {
+        background-color: #1d82aa;
+    }
+
+    label {
+        font-weight: bold;
+
+    }
+
+    /*header section*/
+
+    #ContainerTextHeader {
+        background-image: url("docs/assets/RaveningWar.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        color: #AEF2D9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ContainerText {
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 90px;
+        padding-top: 90px;
+    }
+
+    #ContainerTextHeader a {
+        text-decoration: none;
+        color: #1d82aa;
+        background-color: #070922;
+        padding: 10px;
+        border-radius: 5%;
+        transition: .5s;
+    }
+
+    #ContainerTextHeader a:hover {
+        background-color: #2a3e73;
+    }
+
+    /* Articles section */
+    #ContainerSecondArticles {
+        display: flex;
+        justify-content: center;
+        background-color: #1e2454;
+        flex-direction: row;
+    }
+
+    #Articles {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        top: 0;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    article {
+        background-color: #1d82aa;
+        color: #070922;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding: 20px;
+        border: black;
+        border-style: solid;
+        border-radius: 10px;
+        max-width: 25vw;
+        transition: 1s;
+    }
+
+    article img {
+        border-radius: 5px;
+    }
+
+    article a {
+        background-color: #070922;
+        color: #1d82aa;
+        padding: 10px;
+    }
+
+    article a:hover {
+        background-color: #2a3e73;
+    }
+
+    .Titel {
+        font-size: 2rem;
+    }
+
+    article:hover {
+        transform: scale(1.1);
+    }
+
+    .Rating img {
+        height: 25px;
+    }
+
+    /* Form Section */
+    #FormContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        width: 50vw;
+        padding-bottom: 10vw;
+        gap: 20px;
+    }
+
+    .FormNamesInput {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .formfield {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex: 1;
+    }
+
+    .InputField {
+        padding: 10px;
+    }
+
+    /* Footer Section */
+    footer {
+        background-color: #070922;
+        padding: 30px;
+    }
+
+    footer a {
+        color: #AEF2D9;
+        text-decoration: none;
+    }
+
+    #FooterLogos {
+        display: flex;
+        height: 40px;
+        gap: 10px;
+    }
+
+
+    footer p {
+        color: #AEF2D9;
+    }
+
+    #LinkNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 10px;
+    }
+
+    .button {
+        background-color: #070922;
+        color: #1d82aa;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 25px;
+        transition: .5s;
+
+    }
+
+    .button:hover {
+        background-color: #2a3e73;
+    }
+}
+
+@media (max-width:480px) {
+
+    nav {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .Logo {
+        padding-left: 0px;
+        width: 20vw;
+    }
+
+    #ContainerTextHeader {
+        background-size: auto;
+    }
+
+    #NavLinkContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        max-width: 100vw;
+    }
+
+    form {
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .FormNamesInput {
+        flex-direction: column;
+    }
+
+    .formfield {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #Articles {
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    .button {
+        padding: 20px;
+    }
+
+    article {
+        max-width: 90vw;
+    }
+
+    #LinkNav {
+        flex-direction: column;
+    }
+}
