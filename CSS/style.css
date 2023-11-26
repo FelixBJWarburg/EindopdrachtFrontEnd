@@ -12,7 +12,7 @@
     h5 {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 5vh;
         margin-top: 10vh;
     }
 
@@ -30,8 +30,8 @@
         background-color: #070922;
         border: azure, azure, black, azure;
         border-style: solid;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
         align-items: center;
         top: 0;
         position: sticky;
@@ -45,13 +45,12 @@
         display: flex;
         flex-direction: row;
         justify-content: end;
-        gap: 30px;
-        padding: 10px;
+        gap: 2vw;
     }
 
     nav a {
         background-color: #2a3e73;
-        padding: 10px;
+        padding: 1vw;
         border-radius: 10%;
         color: white;
         text-decoration: none;
@@ -88,15 +87,15 @@
         max-width: 80vw;
         justify-content: center;
         align-items: center;
-        padding-bottom: 90px;
-        padding-top: 90px;
+        padding-bottom: 30vh;
+        padding-top: 30vh;
     }
 
     #ContainerTextHeader a {
         text-decoration: none;
         color: #1d82aa;
         background-color: #070922;
-        padding: 10px;
+        padding: 1vw;
         border-radius: 5%;
         transition: .5s;
     }
@@ -128,22 +127,22 @@
         display: flex;
         flex-direction: column;
         text-align: start;
-        padding: 20px;
+        padding: 2vh;
         border: black;
         border-style: solid;
-        border-radius: 10px;
+        border-radius: 1%;
         max-width: 25vw;
         transition: 1s;
     }
 
     article img {
-        border-radius: 5px;
+        border-radius: 1%;
     }
 
     article a {
         background-color: #070922;
         color: #1d82aa;
-        padding: 10px;
+        padding: 1vw;
     }
 
     article a:hover {
@@ -159,7 +158,7 @@
     }
 
     .Rating img {
-        height: 25px;
+        height: 4vh;
     }
 
     /* Form Section */
@@ -174,30 +173,30 @@
         flex-direction: column;
         width: 50vw;
         padding-bottom: 10vw;
-        gap: 20px;
+        gap: 3vh;
     }
 
     .FormNamesInput {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        gap: 3vh;
     }
 
     .formfield {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 1vh;
         flex: 1;
     }
 
     .InputField {
-        padding: 10px;
+        padding: 1vh;
     }
 
     /* Footer Section */
     footer {
         background-color: #070922;
-        padding: 30px;
+        padding: 3vw;
     }
 
     footer a {
@@ -208,8 +207,8 @@
 
     #FooterLogos {
         display: flex;
-        height: 40px;
-        gap: 10px;
+        height: 5vh;
+        gap: 1vw;
     }
 
 
@@ -223,17 +222,17 @@
         display: flex;
         flex-direction: row;
         justify-content: end;
-        gap: 10px;
+        gap: 1vw;
     }
 
     .button {
         background-color: #070922;
         color: #1d82aa;
-        padding: 10px;
-        border-radius: 5px;
+        padding: 1vw;
+        border-radius: 1%;
         font-size: 1rem;
         font-weight: bold;
-        margin-top: 25px;
+        margin-top: 3vh;
         transition: .5s;
 
     }
@@ -251,7 +250,7 @@
     }
 
     .Logo {
-        padding-left: 0px;
+        padding-left: 0vw;
         width: 20vw;
     }
 
@@ -259,9 +258,15 @@
         background-size: auto;
     }
 
+    .ContainerText {
+        padding-bottom: 8vh;
+        padding-top: 8vh;
+    }
+
     #NavLinkContainer {
         flex-direction: column;
         align-items: center;
+        margin-top: 3vh;
     }
 
     body {
@@ -270,7 +275,7 @@
 
     form {
         width: 90vw;
-        gap: 10px;
+        gap: 2vh;
     }
 
     .FormNamesInput {
@@ -284,13 +289,13 @@
 
     #Articles {
         flex-direction: column;
-        padding: 0px;
+        padding: 0%;
         padding-top: 2vh;
         padding-bottom: 2vh;
     }
 
     .button {
-        padding: 20px;
+        padding: 3vh;
     }
 
     article {
