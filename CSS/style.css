@@ -205,6 +205,7 @@
         text-decoration: none;
     }
 
+
     #FooterLogos {
         display: flex;
         height: 40px;
@@ -215,6 +216,8 @@
     footer p {
         color: #AEF2D9;
     }
+
+
 
     #LinkNav {
         display: flex;
