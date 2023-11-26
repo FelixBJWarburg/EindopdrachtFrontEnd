@@ -71,7 +71,7 @@
     /*header section*/
 
     #ContainerTextHeader {
-        background-image: url("docs/assets/RaveningWar.jpeg");
+        background-image: url("../docs/assets/RaveningWar.jpeg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100vw;
